@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jermaine Felix-Mounlath</title>
+    <style>* {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family:  Arial, sans-serif;
+        margin: 0;
+        /* background-color: lightgray; */
+    
+    }
+    
+    /* header/logo/title*/
+    .header {
+        padding: 60px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .firstname {
+        color: white;
+    }
+    
+    .lastname {
+        animation-name: animate;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .subheadno {
+        animation-name: animate;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+    }
+    .subheadtext {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+    }
+    .navbar {
+        display: flex;
+        background-color: rgb(45, 45, 45);
+    }
+    
+    .navbar a {
+        color: rgb(225, 225, 225);
+        background-color: rgb(45, 45, 45);
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 2s;
+        transition: color 2s;
+    }
+    
+    .navbar a:hover {
+        background-color: rgb(85, 85, 85);
+        color: white;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .navbar, .section {
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .navbar { 
+            font-size: 12px;
+        }
+    }
+    
+    /* @media screen and (max-width: 920px) {
+        .section {
+            flex-direction: column;
+        }
+    } */
+    
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .left {
+        flex: 0 1 30%;
+        /* background-color: darkgray; */
+        padding: 20px;
+    }
+    
+    .right {
+        flex-direction: column;
+        flex: 0 1 70%;
+        /* background-color: lightgray; */
+        padding: 20px;
+        margin-left: 10px;
+    }
+    
+    
+    .image2 {
+        background-image: url("https://i.postimg.cc/MZVVwjv8/IMG-0147-1.jpg");
+        /* background-color: lightgray; */
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+    
+    .Song {
+        /*background-image: url(https://i.postimg.cc/SRsnCwQC/It-aint-Safe.jpg);*/
+        padding: 1px;
+        margin: 10px;
+    }
+    
+    #contacts {
+        font-family: Arial, sans-serif;
+        color: black;
+        font-size: 30px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin: 5px;
+        /* background-color: darkgrey;  */
+    }
+    
+    footer {
+        width: 100%;
+        padding: 2px;
+        font-size: 12px;
+        text-align: center;
+        color: black;
+        background-color: lightgray;
+    }
+    
+    @keyframes animate {
+        0% {color: red;}
+        14% {color: orange;}
+        29% {color: yellow;}
+        43% {color: green;}
+        57% {color: blue;}
+        71% {color: indigo;}
+        85% {color: violet;}
+        100% {color: red}
+    }
+    
+    </style>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="Miss2final.js"></script>
+
+
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h1><span class="firstname">Jermaine</span> <span class="lastname">Felix-Mounlath</span></h1>
+        <p>
+            <span class="subheadno">Just a guy,</span>
+            <span class="subheadtext">and this is him
+            </span>
+        </p>
+    </header>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#bottom">Contact</a>
+    </nav>
+
+    <main class="section">
+        <div id="left">
+            <h2> Info</h2>
+            <p>AGE: 21 year old. <br>
+                D.O.B. 09/02/2001 <br>
+                Fav Colour: Purple
+
+            </p>
+            <div id="contacts">
+                <a href="https://www.facebook.com/dothemahigetthetreats">
+                    <i class="fa fa-facebook-official fa-1x"></i>
+                </a>
+                <a href="https://www.instagram.com/jermaine._.fm/">
+                    <i class="fa fa-instagram fa-1x"></i>
+                </a>
+                <a href="https://twitter.com/JMounlath">
+                    <i class="fa fa-twitter-square fa-1x"></i></a>
+            </div>
+            <br>
+            <br>
+            <div class="Song"><img src=https://i.postimg.cc/vTKspJwC/Flume-album-artwork.jpg></div>
+            <h3 class="Song">Song Of The Day</h3>
+            <p class="Song"><b>Insane<br>
+                    Flume, Moon Holiday
+                </b><br> Since Flumes new album 'Palaces' dropped today<br>the S.O.T.D. is one of my favourite songs by
+                Flume</p>
+                <button id="ModeText" onclick="switchMode()">Switch to Light mode</button>
+        </div>
+        <div id="right">
+            <h2> Cs get degrees</h2>
+            <h5>Idk what to put here but i will fill out the parameters for mission 1</h5>
+            <p>when i have too much creative freedom I overthink<br> and dont know what to do so yea
+                this is my mission 1 site <br>
+                hopefully ill figure it out by the end</p>
+            <div class="image2"></div>
+            <p></p>
+            <p>Yes, this is a pic of me from year 10 <br>
+                i just dont have many other nice ones</p>
+            <br>
+            
+        </div>
+ </div>
+
+
+        <footer class="footer">
+            </a>
+            <h3>Jermaine Felix-Mounlath i used copyrighted material so not all right are reserved</h3>
+        </footer>
+
+    </main>
+</body>
+
+</html>
